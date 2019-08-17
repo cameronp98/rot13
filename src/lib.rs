@@ -64,7 +64,8 @@ pub fn rot13_byte(mode: Mode, byte: u8) -> u8 {
 /// assert_eq!(input, decrypted.as_slice());
 /// ```
 pub fn rot13_slice(mode: Mode, input: &[u8]) -> Vec<u8> {
-    input.iter()
+    input
+        .iter()
         .map(|&byte| {
             // only apply rot13 to ascii alphabetic characters
             if byte.is_ascii_alphabetic() {

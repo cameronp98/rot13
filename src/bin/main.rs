@@ -4,7 +4,7 @@ use std::io::prelude::*;
 
 use clap::{App, Arg};
 
-use rot13::{rot13, Mode};
+use rot13::{Mode, rot13};
 
 fn main() {
     // parse arguments
@@ -69,7 +69,7 @@ fn main() {
 
     // copy the input to the output through a rot13 encoder
     match rot13(mode, &mut input, &mut output) {
-        Ok(()) => {},
+        Ok(()) => {}
         Err(e) => eprintln!("error: {:?}", e),
     }
 }
