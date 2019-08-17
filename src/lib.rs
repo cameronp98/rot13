@@ -94,3 +94,30 @@ pub fn rot13<R: Read, W: Write>(mode: Mode, input: &mut R, output: &mut W) -> io
 
     Ok(())
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn rot13_byte_works() {
+        use super::{rot13_byte, Mode};
+
+        let input = b'A';
+
+        let encrypted = rot13_byte(Mode::Encrypt, input);
+        let decrypted = rot13_byte(Mode::Decrypt, encrypted);
+
+        assert_eq!(input, decrypted);
+    }
+
+    #[test]
+    fn rot13_slice_works() {
+        use super::{rot13_slice, Mode};
+
+        let input = b"Hello, World!";
+
+        let encrypted = rot13_slice(Mode::Encrypt, input);
+        let decrypted = rot13_slice(Mode::Decrypt, &encrypted);
+
+        assert_eq!(input, &decrypted.as_slice())
+    }
+}
