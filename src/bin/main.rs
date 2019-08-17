@@ -9,7 +9,7 @@ use rot13::{Mode, rot13};
 fn main() {
     // parse arguments
     let matches = App::new("rot13")
-        .version("0.1")
+        .version("0.1.1")
         .author("Cameron Phillips. <cameron0505@gmail.com>")
         .about("rot-13 encryption and decryption")
         .arg(

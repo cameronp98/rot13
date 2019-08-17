@@ -1,6 +1,6 @@
 [package]
 name = "rot-13"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Cameron Phillips <cameron0505@gmail.com>"]
 edition = "2018"
 description = "rot-13 encryption and decryption"
