@@ -5,9 +5,8 @@ authors = ["Cameron Phillips <cameron0505@gmail.com>"]
 edition = "2018"
 description = "rot-13 encryption and decryption"
 repository = "https://github.com/cameronp98/rot13-rs.git"
-license = "MIT OR Apache-2.0"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license-file = "LICENSE"
+readme = "README.md"
 
 [lib]
 name = "rot13"

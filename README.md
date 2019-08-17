@@ -3,6 +3,8 @@
 Rot-13 encryption and decryption (written in rust)
 
 [![Build Status](https://travis-ci.com/cameronp98/rot13-rs.svg?branch=master)](https://travis-ci.com/cameronp98/rot13-rs)
+![Crates.io](https://img.shields.io/crates/v/rot-13)
+![Crates.io](https://img.shields.io/crates/l/rot-13)
 
 ```
 USAGE:
